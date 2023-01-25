@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+
+    int M,ch;
+  do
+  { 
+    cout<<"Enter the Number",M;
+    cin>>M;
+
+    if(M%3==0 && M%5==0)
+    {
+        cout<<"Good Number";
+    }
+    else if(M%3==0 && M%5!=0)
+    {
+        cout<<"Bad Number";
+    }
+    else if(M%5==0 && M%3!=0)
+    {
+        cout<<"Poor Number";
+    }
+
+    else
+    {
+        cout<<"-1";
+    }
+
+   cout<<"\nDo you want to continue if yes enter 1 or enter 0 to Stop\n";
+    cin>>ch;
+ }while (ch==1);
+
+}
